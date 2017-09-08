@@ -1,0 +1,6 @@
+[package]
+name = "command_repro"
+version = "0.1.0"
+authors = ["Val Vanderschaegen <valere.vanderschaegen@gmail.com>"]
+
+[dependencies]
