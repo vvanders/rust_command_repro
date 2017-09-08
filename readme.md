@@ -1,6 +1,6 @@
 Repro of Command regression in Rust 1.20.0.
 
-Bat file allow specifying their working directory via "%~dp0". In Rust 1.20.0 this changed such that the working directly instead of the file that the batch file runs from. See the below output for details. Expected output is "C:\dev\command_repro\src" but instead working directory is printed. Note that this only happens on bat files found in PATH. Calling by specific file(Ex. "src/test.bat") works.
+Bat files allow specifying their working directory via "%~dp0". In Rust 1.20.0 this changed such that the working directly instead of the file that the batch file runs from is used. See the below output for details. Expected output is "C:\dev\command_repro\src" but instead working directory is printed. Note that this only happens on bat files found in PATH. Calling by specific file(Ex. "src/test.bat") works.
 
 ```
 PS C:\dev\command_repro> rustup default 1.20.0
